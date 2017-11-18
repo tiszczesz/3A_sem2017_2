@@ -28,6 +28,13 @@
                 }
                 alert(n+"! = "+temp);
             }
+            var napis=prompt("Podaj tekst:");
+            var html = "";
+            for(var i=0;i<napis.length;i++){
+                html += napis[napis.length-1-i];
+                document.write(napis[napis.length-1-i]);
+            }
+            alert(html);
         </script>
     </body>
 </html>

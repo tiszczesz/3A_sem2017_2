@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 3</title>
+        <meta charset="UTF-8">        
+    </head>
+    <body>
+        <h1>Ćwiczenie 3</h1>
+        <script type="text/javascript">
+            var a = parseInt(prompt("Podaj a:"));
+            var b = parseInt(prompt("Podaj b:"));
+            if(isNaN(a) || isNaN(b)){
+                alert("Błędne dane!!");
+            }else{
+               while(b!=0){
+                   var temp = a;
+                   a = b;
+                   b = temp % b;
+               }
+               alert("NWD: "+a);               
+            }
+            var n = parseInt(prompt("Podaj n:"));
+            if(isNaN(n)) alert("n nie jest poprawną liczbą!!");
+            else{
+                temp = 1;
+                for(var i=1; i<=n; i++){
+                    temp *= i; //temp = temp*i;
+                }
+                alert(n+"! = "+temp);
+            }
+        </script>
+    </body>
+</html>

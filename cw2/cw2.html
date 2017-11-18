@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ćwiczenie 2 pętle</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Pętla for</h1>
+<script type="text/javascript">
+	for(var i=5; i<5; i++){
+		document.write("<p>Element nr: "+(i+1)+"</p>");
+	}
+</script>
+<h1>Pętla do...while(...)</h1>
+<script type="text/javascript">
+	var suma = 0;
+	do{
+		var liczba = Math.floor(Math.random()*20);
+		document.write(liczba);
+		suma += liczba;
+		if(suma<100) document.write(" + ");
+	}while(suma<100);
+	document.write(" = "+suma);
+</script>
+<h1>Pętla while(...){....}</h1>
+<script type="text/javascript">
+	var liczba = 2;
+	var licznik = 0;
+	while(liczba!=0){
+		liczba = Math.floor(Math.random()*20);
+		if(liczba!=0) licznik++;
+		document.write(liczba+" ");
+	}
+	document.write("<p>ilość liczb: "+licznik+"</p>");
+</script>
+</body>
+</html>

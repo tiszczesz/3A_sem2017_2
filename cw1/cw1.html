@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ćwiczenie 1 - wstęp</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Ćwiczenie 1 - wstęp</h1>
+<script type="text/javascript">
+	//alert("Witaj świecie");
+	document.write("<h3>Hello world</h3>");
+	var wiek = parseFloat(prompt("Podaj swój wiek: "));
+	if(isNaN(wiek)){
+		document.write("<p style='color: red'>Błędne dane!!</p>");
+	}else if(wiek<18){
+		document.write("<p style='background-color: red'>Serwis nie dla Ciebie!!!</p>");
+	}else{
+		document.write("<p>Zapraszamy do serwisu!!!</p>");
+	}
+</script>
+</body>
+</html>

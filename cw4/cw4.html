@@ -8,9 +8,23 @@
         <div>Ćwicznie 4 - zgadywanka</div>
         <script type="text/javascript">
             var tajemna = Math.floor(Math.random()*50);
+            var licznik=0;
             do{
-                  
+               var liczba = parseInt(prompt("Podaj liczbę"));
+               licznik++;
+               if(isNaN(liczba)){
+                   document.write("<p>Anulowano</p>");
+                   break;
+               }
+               if(liczba<tajemna){
+                   alert("Za mało!!");
+               }else if(liczba>tajemna){
+                   alert("Za dużo")
+               }else{
+                   alert("Sukces!!!");
+               }
             }while(liczba!=tajemna);
+            document.write("<p>Zakończono po: "+licznik+" próbach</p>");
         </script>
     </body>
 </html>
